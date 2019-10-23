@@ -4,7 +4,10 @@
   "description": "code as you can",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "npm run start:react",
+    "start:react": "webpack-dev-server ./src/react/index.jsx",
+    "start:webgl": "webpack-dev-server ./src/webgl/index.ts",
+    "build": "webpack",
     "test": "jest"
   },
   "keywords": [],
@@ -15,7 +18,10 @@
     "@babel/preset-env": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.6.0",
+    "@types/gl-matrix": "^2.4.5",
     "@types/jest": "^24.0.18",
+    "@types/webgl-ext": "0.0.30",
+    "@types/webgl2": "0.0.5",
     "babel-loader": "^8.0.6",
     "jest": "^24.9.0",
     "ts-loader": "^6.2.0",
@@ -25,6 +31,7 @@
     "webpack-dev-server": "^3.8.2"
   },
   "dependencies": {
+    "gl-matrix": "^3.1.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   }
