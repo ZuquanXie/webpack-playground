@@ -1,6 +1,7 @@
 import simplyDraw from './simplyDraw';
 import vertexColorDraw from './vertexColorDraw';
 import { drawACube } from './drawACube';
+import {drawTexture} from './drawTexture';
 
 const CANVAS_WIDTH = 700;
 const CANVAS_HEIGHT = 700;
@@ -22,5 +23,5 @@ window.addEventListener('load', () => {
         return;
     }
 
-    drawACube(gl, CANVAS_WIDTH, CANVAS_HEIGHT);
+    drawTexture(gl, CANVAS_WIDTH, CANVAS_HEIGHT);
 }, false);
