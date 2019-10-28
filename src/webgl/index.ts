@@ -2,6 +2,7 @@ import simplyDraw from './simplyDraw';
 import vertexColorDraw from './vertexColorDraw';
 import { drawACube } from './drawACube';
 import {drawTexture} from './drawTexture';
+import {lightingACube} from './lightingACube';
 
 const CANVAS_WIDTH = 700;
 const CANVAS_HEIGHT = 700;
@@ -23,5 +24,5 @@ window.addEventListener('load', () => {
         return;
     }
 
-    drawTexture(gl, CANVAS_WIDTH, CANVAS_HEIGHT);
+    lightingACube(gl, CANVAS_WIDTH, CANVAS_HEIGHT);
 }, false);
